@@ -1,0 +1,301 @@
+body, input, select, button, td
+{
+	font: 12px Verdana, sans-serif;
+}
+
+body
+{
+	background-color: #e6e6e6;
+	margin: 0px;
+}
+
+h1
+{
+	font: 24px "Trebuchet MS", sans-serif;
+	padding: 4px 8px;
+	color: white;
+	background: #204a87 url("../img/bluebg.png") repeat-x;
+	margin: 0px;
+	height: 36px;
+}
+
+h1 big
+{
+	font-size: 30px;
+}
+
+h1 a
+{
+	color: white;
+	text-decoration: none;
+	cursor: help;
+}
+
+fieldset
+{
+	font-size: 11px;
+	width: 100%;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset input, fieldset button, fieldset select
+{
+	font-size: 11px;
+}
+
+legend
+{
+	font-size: 11px;
+	font-weight: bold;
+	margin: 4px 0px;
+	color: black;
+}
+
+label
+{
+	font-weight: bold;
+}
+
+label.left
+{
+	float: left;
+	width: 100px;
+	line-height: 24px;
+}
+
+a
+{
+	color: #183b6c;
+}
+
+button, .cbButtons input
+{
+	background: #f1f0ee url("../img/button.png") repeat-x top;
+	border-width: 1px;
+	border-style: solid;
+	border-top-color: #ccc;
+	border-left-color: #ccc;
+	border-right-color: #777;
+	border-bottom-color: #777;
+	padding: 3px 0px;
+	margin: 0px 4px;
+}
+
+button img
+{
+	vertical-align: middle;
+	padding-right: 4px;
+}
+
+.panel
+{
+	width: 100%;
+	padding: 4px 0px;
+}
+
+.column
+{
+	width: 44%;
+	margin: 0px 2%;
+	float: left;
+}
+
+.shadowed
+{
+	background: #e6e6e6 url("../img/shadow.png") repeat-x top;
+	padding-top: 24px;
+}
+
+.well, input, select
+{
+	background: white url("../img/well.png") repeat-x top;
+	padding: 4px 2px;
+	border: 1px solid #ccc;
+}
+
+.tooltip
+{
+	border: 2px solid black;
+	font: 11px Verdana;
+	color: white;
+	background-color: black;
+	padding: 0px 8px;
+	max-width: 250px;
+}
+
+.file
+{
+	background: white url("../img/file.png") no-repeat 8px 4px;
+	padding: 0px 8px 0px 30px;
+	margin: 2px 0px;
+	clear: both;
+	line-height: 24px;
+}
+
+.fileRemove
+{
+	height: 20px;
+	width: 24px;
+	padding: 1px 0px;
+	margin-top: 2px;
+	float: right;
+	cursor: pointer;
+}
+
+.file:hover
+{
+	background-color: #f5f5f5;
+}
+
+.file:hover .fileRemove
+{
+	visibility: visible;
+}
+
+#help
+{
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	font-size: 11px;
+}
+
+#help img
+{
+	vertical-align: middle;
+	border: none;
+}
+
+#help a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#projects
+{
+	background: #eeeeec url("../img/graybg.png") top repeat-x;
+	padding: 8px 0px;
+}
+
+#projects .left
+{
+	padding-left: 8px;
+	line-height: 22px;
+}
+
+#projects .right
+{
+	float: right;
+	padding-right: 8px;
+}
+
+#files
+{
+	height: 150px;
+	overflow: auto;
+	padding: 8px 0px;
+}
+
+#files p
+{
+	padding: 0px 8px;
+}
+
+#targetPreview
+{
+	float: left;
+	border: 1px solid #ccc;
+	margin-right: 8px;
+}
+
+#compile
+{
+	font-size: 20px;
+}
+
+#notify
+{
+	width: 230px;
+	height: 75px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	background: #f0f0f0 url("../img/notify.png") no-repeat top left;
+	text-align: center;
+	padding-top: 25px;
+	padding-left: 15px;
+	display: none;
+}
+
+#cbOverlay
+{
+	background-color: black;
+}
+
+.cbBox
+{
+	background-color: #eeeeec;
+	padding: 4px 12px;
+	border: 2px outset #ccc;
+	font-size: 11px;
+}
+
+.cbBox #about
+{
+	text-align: center;
+}
+
+.cbBox h2
+{
+	font: 24px normal "Trebuchet MS", sans-serif;
+	margin: 0px;
+}
+
+.cbButtons
+{
+	margin-top: 18px;
+	text-align: center;
+}
+
+.cbButtons input
+{
+	margin: 0px 8px;
+}
+
+.alertnote, .alertcaution, .alerterror
+{
+	padding-left: 46px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	min-height: 32px;
+}
+
+.alertnote
+{
+	background-image: url("../img/note.png");
+}
+
+.alertcaution
+{
+	background-image: url("../img/caution.png");
+}
+
+.alerterror
+{
+	background-image: url("../img/error.png");
+}
+
+#build
+{
+	padding-top: 16px;
+	clear: both;
+	text-align: center;
+}
+
+#dialogs
+{
+	display: none;
+}

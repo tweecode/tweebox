@@ -1,0 +1,184 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2008.03.14.01.30.46;	author klimas;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Tweebox 1.2</title>
+<style type="text/css">
+@@import url("css/tweebox.css");
+</style>
+
+<!--[if lt IE 7]>
+<style type="text/css">
+img { display: none }
+</style>
+<![endif]-->
+
+</head>
+
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/mooprompt.js"></script>
+<script type="text/javascript" src="js/json.js"></script>
+
+<script type="text/javascript" src="js/file.js"></script>
+<script type="text/javascript" src="js/targets.js"></script>
+<script type="text/javascript" src="js/project.js"></script>
+<script type="text/javascript" src="js/projectlist.js"></script>
+<script type="text/javascript" src="js/twee.js"></script>
+<script type="text/javascript" src="js/interface.js"></script>
+<body>
+
+<h1><a href="javascript:void(0)" onclick="Interface.showDialog('about')">twee<big>box</big> 1.2</a></h1>
+
+<div id="help">
+
+<a href="http://gimcrackd.com/etc/doc/" target="_blank"><img src="img/help.png" /> Help</a>
+
+</div> <!-- #help -->
+
+
+<div id="projects" class="panel"></div>
+
+<div id="content" class="panel shadowed">
+
+<div class="column">
+
+<div id="sourcesContent">
+
+<fieldset>
+
+<legend class="captioned" title="Source Files::These files will be compiled into your story.">
+Source Files
+</legend>
+
+<div id="files" class="well"></div> <!-- #files -->
+
+<p align="right">
+<label for="chooser" title="Add a File::Click the Browse button to add a file to this project." class="captioned">Add a File</label> <span id="chooser"></span>
+</p>
+
+</fieldset>
+
+</div> <!-- #sourcesContent -->
+
+</div> <!-- .column -->
+
+<div class="column">
+
+<div id="destinationContent">
+
+<fieldset>
+
+<p>
+<label title="Save Story As::Choose what folder you'd like to save your created story in, and what to name it. Your file name should end in .htm or .html." class="captioned">Save Story As</label><br />
+<span id="destinations"></span>
+</p>
+
+</fieldset>
+
+</div> <!-- #destinationContent -->
+
+
+<div id="settingsContent">
+
+<fieldset>
+
+<p>
+<label title="Story Format::Sets the kind of TiddlyWiki to create." class="left captioned">Story Format</label>
+
+<select id="target" onchange="Interface.loadTarget()" class="well">
+<option value="jonah">Jonah</option>
+<option value="tw2">TiddlyWiki 2</option>
+<option value="tw">TiddlyWiki 1.2</option>
+</select>
+</p>
+
+<div id="targetInfo">
+<img src="" id="targetPreview" />
+<div id="targetDescription"></div>
+</div> <!-- #targetInfo -->
+
+</fieldset>
+
+</div> <!-- #settingsContent -->
+
+</div> <!-- .column -->
+
+<p id="build">
+<button onclick="Interface.compile()" id="buildButton">
+<img src="img/build.png" width="32" height="32" alt="" />
+Build
+</button>
+</p>
+
+<div id="notify">
+
+<p align="center">
+Your story has been built.
+</p>
+
+<p align="center">
+<button id="viewComplete">View</button>
+</p>
+
+</div>
+
+</div> <!-- #content -->
+
+<div id="dialogs">
+
+<div id="about">
+
+<h2>
+twee<big>box</big> 1.2
+</h2>
+
+<p class="centered">
+by <a href="http://gimcrackd.com/#Chris" target="_blank">Chris Klimas</a>
+</p>
+
+<p>
+The Twee compiler and associated JavaScript files in this application are released under the <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU Public License</a>. The files in the <b>targets</b> directory are derivative works of Jeremy Ruston's <a href="http://www.tiddlywiki.com/" target="_blank">TiddlyWiki project</a> and are used under the terms of its license.
+</p>
+
+<p>
+This application also incorporates code from <a href="http://www.json.org/" target="_blank">JSON.org</a>, the <a href="http://www.mootools.net/" target="_blank">Mootools project</a>, and <a href="http://www.clanccc.co.uk/box/box.html">MooPrompt</a>, as well as icons from the <a href="http://tango.freedesktop.org/">Tango Desktop Project</a>. These are used under terms of their licenses.
+</p>
+
+<p class="centered">
+Folks worth thanking:<br />
+Conal Elliott<br />
+Joel Haddock<br />
+Adam Kucharczyk<br />
+Mara Meijers<br />
+Sean Woznicki
+</p>
+
+</div> <!-- #about -->
+
+</div> <!-- #dialogs -->
+
+</body>
+
+</html>
+@
